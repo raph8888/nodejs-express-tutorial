@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+  <% include templates/header.ejs %>
+
+
+ <h3> <%= videodata.categoryName %></h3>
+
+
+  <ul>
+      <% videodata.categories.forEach(function(item) { %>
+
+      <li><%= item.categoryName %></li>
+      <li><%= item.categoryDescription %></li>
+      <br>
+
+      <% }); %>
+
+
+
+  </ul>
+
+
+    <h1><%= title %></h1>
+    <p>EMBEDDED JAVASCRIPT <%= name %></p>
+
+    <ul>
+        <% for(var i=0; i<5; i++) { %>
+        <li> tuna </li>
+        <% } %>
+    </ul>
+
+  </body>
+</html>
